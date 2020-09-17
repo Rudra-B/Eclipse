@@ -12,13 +12,19 @@ public class Option23 {
 		File f=new File(path);
 		
 		String s[]=f.list();
+		int flag=0;
 		for(String q:s) {
 			
 			if(q.equals(file)) {
 				System.out.println("Entered file present in application");
+				flag=1;
+				break;
 			} 
 		}
-		System.out.println("No file present with enterd name");
+		if(flag==0) {
+			System.out.println("No file present with enterd name");
+		}
+		
 		System.out.println("Press enter to continue");
 		Object_util.input().nextLine();
 		
