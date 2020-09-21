@@ -1,4 +1,4 @@
-package deom;
+package demo;
 
 import java.io.Serializable;
 
