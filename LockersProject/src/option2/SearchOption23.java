@@ -4,7 +4,7 @@ import java.io.File;
 
 import application.Object_util;
 
-public class Option23 {
+public class SearchOption23 {
 	static final String path="D:\\\\File_op\\";
 	void option23() {
 		System.out.println("Enter file name to search");

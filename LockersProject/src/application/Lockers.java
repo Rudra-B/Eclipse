@@ -1,17 +1,16 @@
 package application;
 
 
-import java.util.TreeSet;
 
-import option2.Option2;
-
+import option2.FileMenuOption2;
+ 
 public class Lockers {
 	
 	static {
 		
-		System.out.println("           Lockers.com");
-		System.out.println("                      Developed by:Rudra");
-		System.out.println("");
+		System.out.println("           Welcome to DigiFile version 1.0.0");
+		System.out.println("_________________________________________________________");
+		System.out.println("                                       Developed by:Rudra");
 		System.out.println("");
 		System.out.println("");
 	}
@@ -22,8 +21,7 @@ public class Lockers {
 
 		int flag=0;
         Main_Disp mn=new Main_Disp();
-        Option2 op2 = new Option2();
-        TreeSet<String> set=new TreeSet<String>();
+        FileMenuOption2 op2 = new FileMenuOption2();
         Option1 op1=new Option1();
 		
 		
@@ -37,14 +35,14 @@ public class Lockers {
 		if(option.equals("1"))
 	    {
 				
-				op1.option1(set);
+				op1.option1();
 				flag=1;
 				continue again;
 		}
 		else if(option.equals("2"))
 		{
 			
-			op2.option2(set);
+			op2.option2();
 			flag=1;
 			continue again;
 			

@@ -1,21 +1,16 @@
 package application;
 
-
-
-
-
-import java.io.File;
-import java.util.TreeSet;
+import java.io.File; 
 
 public class Option1 {
 	
-	public void option1(TreeSet<String> set)
+	public void option1()
 	{
 		  
         File  f= new File("D:\\File_op\\");
 
        String s[] = f.list();
-      // System.out.println(s);
+      
 		
 		for(int i=0;i<s.length;i++)
 		{

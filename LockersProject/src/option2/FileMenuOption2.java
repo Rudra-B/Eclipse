@@ -1,19 +1,18 @@
 package option2;
 
 
-import java.util.TreeSet;
 
 import application.Object_util;
 
-public class Option2 {
+public class FileMenuOption2 {
 	
-	public int option2(TreeSet<String> set) {
+	public int option2() {
 	
 	
 	
-	Option21 op21 =new Option21();
-	Option22 op22 =new Option22();
-	Option23 op23 =new Option23();
+	AddOption21 op21 =new AddOption21();
+	DeleteOption22 op22 =new DeleteOption22();
+	SearchOption23 op23 =new SearchOption23();
 	int flag=0;
 	
 	
@@ -30,13 +29,13 @@ public class Option2 {
 	if(option.equals("1"))
     {
 			
-			op21.option21(set);
+			op21.option21();
 			flag =1;
 			continue again;
 	}
 	else if(option.equals("2"))
 	{
-		op22.option22(set);
+		op22.option22();
 		flag=1;
 		continue again;
 	}

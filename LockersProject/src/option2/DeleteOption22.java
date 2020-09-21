@@ -1,14 +1,12 @@
 package option2;
 
 import java.io.File;
-import java.util.TreeSet;
-
 import application.Object_util;
 
-public class Option22 {
+public class DeleteOption22 {
 	
 	
-	public void option22(TreeSet<String> set) {
+	public void option22() {
 		
 		System.out.println("Please enter the file you want to delete");
 		String file=Object_util.input().nextLine();

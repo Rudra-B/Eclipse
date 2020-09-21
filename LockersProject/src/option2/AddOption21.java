@@ -1,14 +1,12 @@
 package option2;
 
 
-import java.io.File;
-import java.util.TreeSet;
-
+import java.io.File; 
 import application.Object_util;
 
-public class Option21 {
+public class AddOption21 {
 	
-	public int option21(TreeSet<String> set) {
+	public void option21() {
 		
 	
 	System.out.println("Please Enter file name");
@@ -37,7 +35,7 @@ public class Option21 {
 	System.out.println("press enter to continue");
 	Object_util.input().nextLine();
 	
-	return 1;
+	
 	}
 
 }
