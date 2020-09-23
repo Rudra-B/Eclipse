@@ -10,7 +10,7 @@ public class MainSerializ {
 	public static void main(String[] args) {
 	 
 		Model md=new Model("anil","8095991805","wonder@321");
-		try(FileOutputStream fo=new FileOutputStream("zak.txt");
+		try(FileOutputStream fo=new FileOutputStream("zak1.txt");
 				ObjectOutputStream ob=new ObjectOutputStream(fo)){
 			
 			ob.writeObject(md);

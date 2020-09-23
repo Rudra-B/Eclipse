@@ -1,6 +1,6 @@
 package demo;
 
-import java.io.FileInputStream;
+import java.io.FileInputStream; 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
@@ -17,7 +17,7 @@ public class Deserializ {
 			System.out.println(md);
 		}catch(IOException |ClassNotFoundException e)
 		{
-			System.out.println(e.getMessage());
+			System.out.println(e);
 		}
 
 	}
