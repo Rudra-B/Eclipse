@@ -15,9 +15,9 @@ public class FileMenuOption2 {
 	SearchOption23 op23 =new SearchOption23();
 	int flag=0;
 	
-	
-	again:
+
 	do{
+		System.out.println("_____________________________________");
 		System.out.println("Please select the following option");
 		System.out.println("1.Add File");
 		System.out.println("2.Delete File");
@@ -31,20 +31,17 @@ public class FileMenuOption2 {
 			
 			op21.option21();
 			flag =1;
-			continue again;
 	}
 	else if(option.equals("2"))
 	{
 		op22.option22();
 		flag=1;
-		continue again;
 	}
 	else if(option.equals("3"))
     {
     	
 		op23.option23();
 		flag=1;
-		continue again;
 	}
     else if(option.equals("4"))
     {
@@ -56,9 +53,7 @@ public class FileMenuOption2 {
     {
     	System.out.println("You have Entered wrong option, Please select correct Option");
     	
-    	  flag=1;
-    	  continue again;
-    	
+    	  flag=1;	
     }
     }while(flag==1);
 

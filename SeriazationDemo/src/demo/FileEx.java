@@ -11,7 +11,7 @@ public class FileEx {
 		
 		try {
 			//System.getProperty(User.dir");
-			
+			System.out.println(a);
 			FileOutputStream fs=new FileOutputStream(a+"\\File1\\vabc.txt");
 			
 		} catch (FileNotFoundException e) {

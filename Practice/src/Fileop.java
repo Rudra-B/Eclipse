@@ -13,6 +13,7 @@ public class Fileop {
         	String s="Writing data to file";
         	bo.write(s.getBytes());
         	
+        	
         }catch( IOException e)
         {
         	System.out.println(e.getMessage());
