@@ -1,7 +1,9 @@
-package application;
+package utility;
 
 import java.io.File;
 import java.util.Scanner;
+
+import application.Lockers;
 
 public class Object_util {
 	

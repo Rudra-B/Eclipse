@@ -1,13 +1,15 @@
 package option2;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 
 import application.Lockers;
-import application.Object_util;
+import exception_package.BusinessException;
+import utility.Object_util;
 
 public class DeleteOption22 {
 
-	public void option22() {
+	public void option22() throws FileNotFoundException {
 
 		File f = Object_util.file();
 		String s[] = f.list();
@@ -28,7 +30,7 @@ public class DeleteOption22 {
 		if (d.delete() == true) {
 			System.out.println("Successfully deleted file = " + file);
 		} else {
-			System.out.println("Unable to delete file please try again");
+			throw new BusinessException("Entered file not present in Directory");
 		}
 
 	}

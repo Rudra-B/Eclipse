@@ -2,7 +2,9 @@ package option2;
 
 
 
-import application.Object_util;
+import java.io.FileNotFoundException;
+
+import utility.Object_util;
 
 public class FileMenuOption2 {
 	
@@ -34,7 +36,12 @@ public class FileMenuOption2 {
 	}
 	else if(option.equals("2"))
 	{
-		op22.option22();
+		try {
+			op22.option22();
+		} catch (FileNotFoundException e) {
+			
+			System.out.println(e.getMessage());
+		}
 		flag=1;
 	}
 	else if(option.equals("3"))

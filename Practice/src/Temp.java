@@ -3,11 +3,26 @@ import java.util.Scanner;
 public class Temp {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("enter data");
-		String a=sc.nextLine();
+	    int num;
+	    boolean flag;
+		System.out.println("Please enter option");
 		
-		System.out.println(a.equals(""));
+		do {
+			flag=false;
+		Scanner sc=new Scanner(System.in);
+		try {
+	    num=Integer.parseInt(sc.nextLine());
+		}catch(Exception e)
+		{
+			System.out.println("Please enter Numbers only");
+			flag=true;
+		}
+		}while(flag!=false);
+	    
+		
+		
+		
+	
 		
 
 	}
