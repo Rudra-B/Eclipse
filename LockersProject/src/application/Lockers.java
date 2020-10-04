@@ -1,5 +1,7 @@
 package application;
 
+import java.io.File;
+
 import option2.FileMenuOption2;
 import utility.Object_util;
 
@@ -8,7 +10,7 @@ public class Lockers {
 	static {
 
 		System.out.println("           Welcome to LockedMe.com version 1.0.1");
-		System.out.println("_________________________________________________________");
+		System.out.println("---------------------------------------------------------");
 		System.out.println("                                       Developed by:Rudra");
 		System.out.println("");
 		System.out.println("");
@@ -20,10 +22,18 @@ public class Lockers {
 		Main_Disp mn = new Main_Disp();
 		FileMenuOption2 fileMenuOption2 = new FileMenuOption2();
 		FileDisplayOption1 fileDisplayOption1 = new FileDisplayOption1();
+		File f=Object_util.file();
+		
+		if(!f.isDirectory())
+		{
+			f.mkdir();
+		}
+		
 
 		do {
 
 			mn.display();
+			
 			// taking input from the user
 			String option = Object_util.input().nextLine();
 

@@ -14,7 +14,7 @@ public class AddOption21 {
 		int flag = 0;
 		do {
 			flag = 0;
-			System.out.println("Please Enter file name");
+			System.out.println("Please Enter file name\n");
 			f = Object_util.input().nextLine();
 			if (!f.matches(".+")) {
 				flag = 1;
@@ -26,12 +26,12 @@ public class AddOption21 {
 		File file = new File(Lockers.path + "\\Root\\" + f + ".txt");
 		try {
 			if (file.createNewFile()) {
-				System.out.println("file added successfully");
+				System.out.println("file added successfully\n");
 			} else {
-				System.out.println("unable to create file");
+				System.out.println("Unable to add file to Directory, Please check and try again");
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 
 	}

@@ -13,24 +13,24 @@ public class DeleteOption22 {
 
 		File f = Object_util.file();
 		String s[] = f.list();
-		System.out.println("Files present in Directory");
-		System.out.println("--------------------------");
-		for (String q : s) {
-
-			System.out.println(q);
-
-		}
-
-		System.out.println(" ");
-		System.out.println("Please enter the file you want to delete");
+		
+		System.out.println("Please enter the file name to delete\n");
 		String file = Object_util.input().nextLine();
 		file = file + ".txt";
 		File d = new File(Lockers.path + "\\Root\\" + file);
+		boolean b=false;
+		for(String a:s)
+		{
+			if(a.equals(file))
+			{
+				b=d.delete();
+			}
+		}
 
-		if (d.delete() == true) {
+		if (b==true) {
 			System.out.println("Successfully deleted file = " + file);
 		} else {
-			throw new BusinessException("Entered file not present in Directory");
+			throw new BusinessException("Unable to delete File, Please try again\n");
 		}
 
 	}

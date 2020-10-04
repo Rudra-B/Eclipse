@@ -19,7 +19,8 @@ public class FileMenuOption2 {
 	
 
 	do{
-		System.out.println("_____________________________________");
+		System.out.println("");
+		System.out.println("-------------------------------------");
 		System.out.println("Please select the following option");
 		System.out.println("1.Add File");
 		System.out.println("2.Delete File");
